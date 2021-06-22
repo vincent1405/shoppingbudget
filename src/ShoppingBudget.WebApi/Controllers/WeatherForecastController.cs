@@ -22,7 +22,7 @@ namespace ShoppingBudget.WebApi.Controllers
         private readonly ILogger<WeatherForecastController> _logger;
 
         // The Web API will only accept tokens 1) for users, and 2) having the "access_as_user" scope for this API
-        static readonly string[] scopeRequiredByApi = new string[] { "access_as_user" };
+        static readonly string[] scopeRequiredByApi = new string[] { "ReadAccess" };
 
         public WeatherForecastController(ILogger<WeatherForecastController> logger)
         {
